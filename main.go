@@ -4,6 +4,20 @@ import "fmt"
 import "./easy"
 
 func main() {
+	// one()
+	fmt.Println('g')
+
+}
+
+func fool() interface{} {
+	return 1
+}
+
+func one() {
+	/***
+	引用其他包的方法
+	add声明一些数据类型的方式
+	***/
 	x := fool()
 	if x != nil {
 		fmt.Println(x)
@@ -40,9 +54,4 @@ func main() {
 
 	var ccc error
 	fmt.Println(ccc)
-
-}
-
-func fool() interface{} {
-	return 1
 }
