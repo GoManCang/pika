@@ -4,8 +4,9 @@ import "fmt"
 import "./easy"
 
 func main() {
-	// one()
+	one()
 	fmt.Println('g')
+	fmt.Println("g")
 
 }
 
@@ -18,6 +19,9 @@ func one() {
 	引用其他包的方法
 	add声明一些数据类型的方式
 	***/
+
+	var bbcs int = 1234
+	fmt.Println("hello ", bbcs)
 	x := fool()
 	if x != nil {
 		fmt.Println(x)
