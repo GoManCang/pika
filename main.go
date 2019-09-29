@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import "./easy"
+import "pika/easy"
 
 func main() {
 	one()
