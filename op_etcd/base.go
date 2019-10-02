@@ -62,7 +62,7 @@ func main01() {
 
 }
 
-func main() {
+func main2() {
 
 	var a, b int = 1000, 200
 	fmt.Println(a / (b * 1.0))
@@ -103,5 +103,35 @@ func main() {
 
 	s := PI * math.Pow(r, 2)
 	fmt.Printf("%0.2f", s)
+
+}
+
+func main() {
+
+	const (
+		a = iota
+		//v, c = iota, iota
+		f
+		g
+		k = 10
+		l
+		p = iota
+	)
+
+	fmt.Println(a)
+	fmt.Println(f)
+	fmt.Println(g)
+	fmt.Println(k)
+	fmt.Println(l)
+	fmt.Println(p)
+
+	/*
+		0
+		1
+		2
+		10
+		10
+		5
+	*/
 
 }
