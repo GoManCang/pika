@@ -106,7 +106,7 @@ func main2() {
 
 }
 
-func main() {
+func main3() {
 
 	const (
 		a = iota
@@ -133,5 +133,32 @@ func main() {
 		10
 		5
 	*/
+
+}
+
+func main4() {
+	a, b := 10.0, 0.0000000000
+	s := a / b
+	//panic: runtime error: integer divide by zero
+	//+Inf 无穷大么？？
+	//取余不能对浮点数进行
+	//c := a % b
+	//fmt.Println(c)
+	fmt.Println(s)
+
+}
+
+func main() {
+
+	a := 10
+	a++
+	//不能进行赋值运算
+	//c := a++
+	fmt.Println(a)
+
+	const c = 10
+
+	//c++
+	//	常量不允许自增自减
 
 }
