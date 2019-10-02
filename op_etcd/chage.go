@@ -12,4 +12,17 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 
+	var c int
+	c = a
+	a = b
+	b = c
+	fmt.Println(a)
+	fmt.Println(b)
+
+	a = a + b
+	b = a - b
+	a = a - b
+
+	fmt.Println(a)
+	fmt.Println(b)
 }
