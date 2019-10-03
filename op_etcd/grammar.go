@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -51,12 +50,30 @@ func main() {
 	}
 	fmt.Println(count)
 	// 时间模拟
-	for i := 0; i < 24; i++ {
-		for j := 0; j < 60; j++ {
-			for k := 0; k < 60; k++ {
-				time.Sleep(time.Second)
-				fmt.Println(i, j, k)
-			}
+	//for i := 0; i < 24; i++ {
+	//	for j := 0; j < 60; j++ {
+	//		for k := 0; k < 60; k++ {
+	//			time.Sleep(time.Second)
+	//			fmt.Println(i, j, k)
+	//		}
+	//	}
+	//}
+	x := 0
+	for {
+		fmt.Println(x)
+		if x > 5 {
+			break
 		}
+		x++
 	}
+
+	fmt.Println("hello 1")
+	goto SET
+	//中间会skip
+	fmt.Println("hello 2")
+	fmt.Println("hello 3")
+SET:
+	fmt.Println("hhhh")
+	fmt.Println("hhhh")
+
 }
