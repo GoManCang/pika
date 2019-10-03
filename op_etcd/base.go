@@ -148,7 +148,7 @@ func main4() {
 
 }
 
-func main() {
+func main5() {
 
 	a := 10
 	a++
@@ -160,5 +160,21 @@ func main() {
 
 	//c++
 	//	常量不允许自增自减
+
+}
+
+func main() {
+	//	类型转换
+	// 高类型的转成低类型，可能会丢失静笃
+	// 数据溢出，符号发生改变
+	var a int = 2568
+	fmt.Println(int8(a))
+	fmt.Println(int16(a))
+
+	a = 107653 // 几天几时几分
+	fmt.Println("秒：", a%60)
+	fmt.Println("分：", a/60%60)
+	fmt.Println("时：", a/60/60%24)
+	fmt.Println("天：", a/60/60/24%365)
 
 }
