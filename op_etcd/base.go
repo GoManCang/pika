@@ -223,7 +223,7 @@ func main() {
 
 	switch s > 10 {
 	case false:
-		fmt.Println(s)
+		fmt.Println("s < 10")
 	case true:
 		fmt.Println("s > 10")
 	}
@@ -235,6 +235,33 @@ func main() {
 		fmt.Println("s>10")
 	default:
 		fmt.Println("s<10")
+	}
+
+	fmt.Println("---------------------")
+	switch s {
+	case 1:
+		fmt.Println(1)
+		fallthrough
+	case 2:
+		fmt.Println(2)
+		fallthrough
+
+	case 3, 4, 5, 7:
+		fmt.Println("3,4,5,7")
+	default:
+		fmt.Println(s)
+
+		/**
+		1
+		s < 10
+		s<10
+		---------------------
+		1
+		2
+		3,4,5,7
+
+		*/
+
 	}
 
 }
