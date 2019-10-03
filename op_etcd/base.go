@@ -163,7 +163,7 @@ func main5() {
 
 }
 
-func main() {
+func main7() {
 	//	类型转换
 	// 高类型的转成低类型，可能会丢失静笃
 	// 数据溢出，符号发生改变
@@ -176,5 +176,18 @@ func main() {
 	fmt.Println("分：", a/60%60)
 	fmt.Println("时：", a/60/60%24)
 	fmt.Println("天：", a/60/60/24%365)
+
+}
+
+func main() {
+
+	a, b := 10, 20
+
+	fmt.Println(a > b && a > 20 || b > 20)
+	fmt.Println(a < b && a < 20 || b < 20)
+
+	fmt.Println(a > b || a < 20 && b < 20)
+
+	//	逻辑与 高于逻辑或
 
 }
