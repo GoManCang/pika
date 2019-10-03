@@ -179,7 +179,7 @@ func main7() {
 
 }
 
-func main() {
+func main8() {
 
 	a, b := 10, 20
 
@@ -190,4 +190,29 @@ func main() {
 
 	//	逻辑与 高于逻辑或
 
+}
+
+func main() {
+	var a int = 20
+	// 取地址运算符
+	fmt.Println(&a)
+	// * 取运算符，p 指针变量
+	c := &a
+	fmt.Println(*c)
+	//通过指针间接修改变量的值
+	*c = 200
+	fmt.Println(a)
+
+	//	（） 括号[] 数组下标，.结构体
+	//	位运算 & | ^ ~
+	//	位移运算>> <<
+	// 通信>-
+
+	const (
+		aa        = iota
+		bb, cc, d = iota, iota, iota
+	)
+	fmt.Println(aa)
+	fmt.Println(bb)
+	fmt.Println(cc)
 }
