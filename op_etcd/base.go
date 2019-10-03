@@ -192,7 +192,7 @@ func main8() {
 
 }
 
-func main() {
+func main9() {
 	var a int = 20
 	// 取地址运算符
 	fmt.Println(&a)
@@ -215,4 +215,26 @@ func main() {
 	fmt.Println(aa)
 	fmt.Println(bb)
 	fmt.Println(cc)
+}
+
+func main() {
+	var s int
+	_, _ = fmt.Scan(&s)
+
+	switch s > 10 {
+	case false:
+		fmt.Println(s)
+	case true:
+		fmt.Println("s > 10")
+	}
+
+	switch {
+	case s == 10:
+		fmt.Println("s==10")
+	case s > 10:
+		fmt.Println("s>10")
+	default:
+		fmt.Println("s<10")
+	}
+
 }
