@@ -28,4 +28,19 @@ func main() {
 	s := test_(1, 2, 3, 4, 5)
 	fmt.Println(s)
 
+	//阶乘
+	// 1*2*3*4*5
+	sum_ := 1
+	var vs func(int)
+	vs = func(n int) {
+		if n == 1 {
+			return
+		}
+		vs(n - 1)
+		sum_ *= n
+	}
+
+	vs(5)
+	fmt.Println(sum_)
+
 }
