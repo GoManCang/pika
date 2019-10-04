@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"pika/so/src/arr"
+	"pika/so/src/dataType"
+	"strings"
 )
 
 func main() {
-	fmt.Println("this is test")
-
 	//id := user.AddUser()
 	//fmt.Println("添加ID", id)
 
@@ -15,5 +14,10 @@ func main() {
 	//arr.ArrayTest()
 
 	//随机数
-	arr.RandomInt()
+	//arr.RandomInt()
+
+	//字符串
+	//dataType.StringTest()
+	fmt.Println(strings.Repeat("-", 30))
+	dataType.MapTest()
 }
