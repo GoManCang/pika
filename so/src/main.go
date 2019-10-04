@@ -19,5 +19,7 @@ func main() {
 	//字符串
 	//dataType.StringTest()
 	fmt.Println(strings.Repeat("-", 30))
-	dataType.MapTest()
+	//dataType.MapTest()
+
+	dataType.StructTest()
 }
