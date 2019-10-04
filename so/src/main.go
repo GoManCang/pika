@@ -19,7 +19,11 @@ func main() {
 	//字符串
 	//dataType.StringTest()
 	fmt.Println(strings.Repeat("-", 30))
-	//dataType.MapTest()
 
-	dataType.StructTest()
+	//map
+	//dataType.MapTest()
+	//结构体
+	//dataType.StructTest()
+	//指针
+	dataType.PointTest()
 }
