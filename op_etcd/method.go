@@ -19,6 +19,11 @@ func test_(arr ...int) int {
 	return len(arr)
 }
 
+func Test() (a, b, c int) {
+	a, b, c = 1, 2, 3
+	return
+}
+
 func main() {
 
 	test()
@@ -42,5 +47,19 @@ func main() {
 
 	vs(5)
 	fmt.Println(sum_)
+	fmt.Println(Test())
+
+	c, a, b := Test()
+	fmt.Println(c)
+	fmt.Println(a)
+	fmt.Println(b)
+
+	//函数定义参数
+	type Ftest func() (int, int, int)
+	// 声明函数
+	var abc Ftest
+	//赋值函数
+	abc = Test
+	fmt.Println(abc())
 
 }

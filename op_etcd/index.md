@@ -67,4 +67,13 @@
 
    ![image-20191004003438523](/Users/li/Library/Application Support/typora-user-images/image-20191004003438523.png)
 
-3. 
+3. 函数
+
+   1. 匿名函数
+   2. 递归函数
+   3. 函数类型，函数作用域
+   4. 函数的嵌套调用
+   5. 函数的返回类型
+   6. 不定参数 类型要保持一致
+
+4. 
