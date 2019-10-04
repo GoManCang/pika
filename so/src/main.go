@@ -11,5 +11,9 @@ func main() {
 	//id := user.AddUser()
 	//fmt.Println("添加ID", id)
 
-	arr.ArrayTest()
+	//数组测试
+	//arr.ArrayTest()
+
+	//随机数
+	arr.RandomInt()
 }
