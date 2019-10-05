@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"pika/so/src/dataType"
 	"strings"
 )
 
@@ -25,5 +24,8 @@ func main() {
 	//结构体
 	//dataType.StructTest()
 	//指针
-	dataType.PointTest()
+	//dataType.PointTest()
+	// type
+	//dataType.TypeTest()
+	TestInterface()
 }
