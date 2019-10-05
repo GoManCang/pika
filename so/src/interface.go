@@ -30,4 +30,14 @@ func TestInterface() {
 	// 多态
 	SayHi(&p)
 
+	// 接口类型可以接收任意类型的数据
+	var i interface{}
+
+	i = 10
+	fmt.Println(i)
+
+	i = 3.123
+	fmt.Println(i)
+	i = "watch"
+	fmt.Println(i)
 }
