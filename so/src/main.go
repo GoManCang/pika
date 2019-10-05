@@ -30,5 +30,9 @@ func main() {
 	//接口相关
 	//TestInterface()
 
+	//断言
 	AssertTest()
+
+	// error panic
+	ExceptionTest()
 }
