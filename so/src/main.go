@@ -27,5 +27,8 @@ func main() {
 	//dataType.PointTest()
 	// type
 	//dataType.TypeTest()
-	TestInterface()
+	//接口相关
+	//TestInterface()
+
+	AssertTest()
 }
