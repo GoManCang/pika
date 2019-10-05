@@ -37,5 +37,8 @@ func main() {
 	//ExceptionTest()
 
 	// 延迟调用
-	DelayTest()
+	//DelayTest()
+
+	//recover 拦截
+	RecoverTest()
 }
