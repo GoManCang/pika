@@ -31,8 +31,11 @@ func main() {
 	//TestInterface()
 
 	//断言
-	AssertTest()
+	//AssertTest()
 
 	// error panic
-	ExceptionTest()
+	//ExceptionTest()
+
+	// 延迟调用
+	DelayTest()
 }
