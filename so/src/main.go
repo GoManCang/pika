@@ -40,5 +40,8 @@ func main() {
 	//DelayTest()
 
 	//recover 拦截
-	RecoverTest()
+	//RecoverTest()
+
+	// 文件操作
+	FileTest()
 }
