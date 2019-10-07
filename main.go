@@ -1,7 +1,6 @@
 package main
 
 import "fmt"
-import "pika/easy"
 
 func main() {
 	one()
@@ -28,7 +27,7 @@ func one() {
 	}
 	fmt.Println("hello world")
 
-	c := easy.Add(1, 2)
+	c := base.Add(1, 2)
 	fmt.Println(c)
 
 	d := easy.DataType(1, 2)
