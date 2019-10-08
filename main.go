@@ -27,11 +27,11 @@ func one() {
 	}
 	fmt.Println("hello world")
 
-	c := base.Add(1, 2)
-	fmt.Println(c)
+	//c := Add(2, 3)
+	//fmt.Println(c)
 
-	d := easy.DataType(1, 2)
-	fmt.Println("abc：", d)
+	//d := easy.DataType(1, 2)
+	//fmt.Println("abc：", d)
 
 	var a, b int
 	a = 1
