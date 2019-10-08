@@ -23,6 +23,18 @@ func main() {
 		context.String(http.StatusOK, "hello %s %s", firstName, lastName)
 	})
 
+	//接受表单
+	r.POST("/form_post", func(context *gin.Context) {
+		message := context.PostForm("message")
+		nick := context.DefaultQuery("nick", "anonymous")
+
+		context.JSON(200, gin.H{
+			"status":  "posted",
+			"message": message,
+			"nick":    nick,
+		})
+	})
+
 	err := r.Run(":8080")
 	if err == nil {
 		fmt.Println("启动正常")
