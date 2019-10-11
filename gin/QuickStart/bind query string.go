@@ -17,6 +17,9 @@ func main() {
 	route.Any("/testing", startPage)
 
 	_ = route.Run(":9999")
+	/*
+		http://localhost:9999/testing?name=name&address=%E5%8C%97%E4%BA%AC
+	*/
 
 }
 
