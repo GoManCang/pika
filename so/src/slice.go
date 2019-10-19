@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	a := make([]int, 2, 10)
@@ -30,7 +33,7 @@ func main() {
 	a[1] = 1000
 	fmt.Println(a, c)
 
-	s2 := []int{1, 2, 3, 4, 5}
+	s2 := []int{11, 2, 3, 4, 5}
 
 	// 切片是一段连续的地址空间，是一个底层数组
 	x1 := s2[:]
@@ -38,5 +41,10 @@ func main() {
 	x1 = append(s2[:1], s2[2:]...)
 	//[1 3 4 5 5] [1 3 4 5]
 	fmt.Println(s2, x1)
+
+	//对切片进行排序
+	sort.Ints(x1)
+
+	fmt.Println(x1)
 
 }
