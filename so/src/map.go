@@ -89,4 +89,8 @@ func main() {
 
 	fmt.Println(pp)
 
+	//第二种
+	sort.Strings(keys)
+	// 按照排序好的keys 进行取数
+	fmt.Println(keys)
 }
