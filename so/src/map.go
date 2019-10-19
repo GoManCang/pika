@@ -5,6 +5,7 @@ import (
 	"math/rand"
 	"reflect"
 	"sort"
+	"strings"
 	"time"
 )
 
@@ -93,4 +94,22 @@ func main() {
 	sort.Strings(keys)
 	// 按照排序好的keys 进行取数
 	fmt.Println(keys)
+
+	//map slice
+	//m2 := make([]map[string]string, 0, 10)
+	//panic: runtime error: index out of range
+	//m2[0]["hello"] = "world"
+
+	m2 := make([]map[string]string, 1, 10)
+	//panic: assignment to entry in nil map
+	//m2[0]["hello"] = "world"
+
+	//ok
+	//a := map[string]string{}
+	//a["hello"] = "world"
+	//m2 = append(m2, a)
+
+	m2[0] = map[string]string{}
+	m2[0]["hello"] = strings.ToUpper("World")
+	fmt.Println(m2)
 }
