@@ -100,7 +100,7 @@ func main() {
 	//panic: runtime error: index out of range
 	//m2[0]["hello"] = "world"
 
-	m2 := make([]map[string]string, 1, 10)
+	m2 := make([]map[string]string, 10, 10)
 	//panic: assignment to entry in nil map
 	//m2[0]["hello"] = "world"
 
@@ -112,4 +112,9 @@ func main() {
 	m2[0] = map[string]string{}
 	m2[0]["hello"] = strings.ToUpper("World")
 	fmt.Println(m2)
+
+	//	 值为slice的map
+	m3 := make(map[string][]int, 10)
+	m3["hello"] = []int{1, 2, 3}
+	fmt.Println(m3)
 }
