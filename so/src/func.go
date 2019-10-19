@@ -38,7 +38,13 @@ func main() {
 
 	test3("1", 2, 3, 4, 5)
 
-	defer fmt.Println("hello deffer")
+	defer fmt.Println("hello deffer 1")
+	defer fmt.Println("hello deffer 2")
 	fmt.Println("after defer")
+	/*
+		after defer
+		hello deffer 2
+		hello deffer 1
+	*/
 
 }
