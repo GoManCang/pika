@@ -40,5 +40,6 @@ func main() {
 	}
 	for _, ev := range resp.Kvs {
 		fmt.Printf("%s : %s\n", ev.Key, ev.Value)
+		fmt.Println(ev.Key, ev.Value)
 	}
 }

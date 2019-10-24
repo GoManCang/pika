@@ -40,7 +40,7 @@ func main() {
 
 	_, err = cli.Put(ctx, "/a/b/c", "sample")
 
-	cancel()
+	defer cancel()
 
 	if err != nil {
 		fmt.Println(err)
@@ -51,7 +51,7 @@ func main() {
 
 	res, err := cli.Get(ctx, "/a/b/c")
 
-	cancel()
+	defer cancel()
 
 	if err != nil {
 		fmt.Println(err)
@@ -59,7 +59,7 @@ func main() {
 	}
 
 	for _, v := range res.Kvs {
-		fmt.Println(v.Key, v.Value)
+		fmt.Println(string(v.Key), string(v.Value))
 	}
 
 }
